@@ -18,3 +18,6 @@ COPY . /app/backend
 EXPOSE 8000
 #RUN python manage.py migrate
 #RUN python manage.py makemigrations
+
+# to run this on k8 add this command line 
+# CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
